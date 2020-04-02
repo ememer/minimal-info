@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  height: 20vh;
+  padding: 40px;
+
+  .header_title {
+    font-size: 2.5rem;
+    position: relative;
+    font-family: "Sen";
+    opacity: 30%;
+    font-weight: 800;
+  }
+
+  .header_titleClock {
+    font-size: 1.5rem;
+    position: absolute;
+    font-family: "Sen";
+    top: 75px;
+    left: 150px;
+    opacity: 30%;
+  }
+}

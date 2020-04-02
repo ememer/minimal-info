@@ -1,0 +1,97 @@
+.ToDo_content {
+  width: 700px;
+  height: 475px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgba(4, 1, 31, 0.082);
+  border-radius: 10px;
+  box-shadow: $main-element-shadows;
+}
+.ToDo_lists {
+  width: 100%;
+  padding: 30px;
+  height: 90%;
+  ul {
+    max-height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.ToDo_items {
+  background: rgba(57, 53, 105, 0.1);
+  border: none;
+  border-bottom: 1px solid $main-color;
+  border-left: 1px solid $main-color;
+  border-right: 1px solid $main-color;
+  border-radius: 10px;
+  margin: 0px 5px 0px 5px;
+  padding: 5px 10px;
+  color: $main-white;
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  button {
+    background: $main-color;
+    border-radius: 5px;
+    border: none;
+    height: 95%;
+    width: 25px;
+    margin-right: 10px;
+    color: $main-white;
+  }
+}
+
+input {
+  width: 75%;
+  height: 25px;
+  background: rgba(253, 253, 253, 0.041);
+  border: none;
+  border-bottom: 1px solid $main-color;
+  border-left: 1px solid $main-color;
+  border-right: 1px solid $main-color;
+  border-radius: 10px;
+  margin: 0px 5px 0px 5px;
+  padding: 10px;
+  color: $main-color;
+  font-weight: 400;
+}
+form {
+  width: 100%;
+  border-radius: 10px;
+
+  .add_btn {
+    height: 25px;
+    min-width: 23%;
+    background: rgba(57, 53, 105, 0.1);
+    border: none;
+    border-bottom: 1px solid $main-color;
+    border-left: 1px solid $main-color;
+    border-right: 1px solid $main-color;
+    border-radius: 10px;
+    color: $main-white;
+  }
+}
+
+.error_info_visible {
+  display: none;
+}
+.error_info {
+  text-align: center;
+  padding: 5px;
+  height: 30px;
+  width: 300px;
+  border: 1px dashed $main-color;
+  border-radius: 15px;
+  color: $main-color;
+  background-color: #80022c60;
+}

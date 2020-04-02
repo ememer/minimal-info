@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+}
+.social {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  a {
+    font-size: 1.5rem;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #656565;
+    opacity: 35%;
+  }
+  a:hover {
+    color: $main-color;
+    opacity: 50%;
+  }
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 20px;
+}
+.footer_data {
+  font-size: 1rem;
+  color: $main-color;
+  font-weight: 800;
+  opacity: 50%;
+}

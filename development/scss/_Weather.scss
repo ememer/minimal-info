@@ -1,0 +1,81 @@
+.weather_box {
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid $main-border;
+  border-radius: 10px;
+  box-shadow: $main-element-shadows;
+}
+
+.weather_section {
+  width: 100%;
+  font-family: "Sen";
+  .div {
+    font-family: "Sen";
+    display: inline-block;
+    font-size: 2rem;
+    width: 100px;
+  }
+  h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: $main-white;
+  }
+  .weather_temp {
+    font-family: "Sen";
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    color: $main-color;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 90%;
+      margin-left: 10px;
+      margin-top: 5px;
+      height: 1px;
+      background: $main-color;
+      border-radius: 10px;
+      opacity: 50%;
+    }
+  }
+}
+
+.weather_tempDifference {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.temp_separ {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 30px;
+  margin: 0px 20px;
+  background: $main-color;
+  border-radius: 10px;
+  opacity: 50%;
+}
+.min_temp,
+.max_temp {
+  font-family: "Sen";
+  font-size: 1rem;
+  color: $main-white;
+}
+
+.weather_location {
+  font-family: "Sen";
+  width: 100%;
+  color: $main-color;
+  text-align: center;
+  margin-bottom: 30px;
+}

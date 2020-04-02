@@ -1,0 +1,17 @@
+.content_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  padding: 0px 50px 0px 50px;
+  margin-bottom: 10px;
+}
+
+.content {
+  height: 475px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
