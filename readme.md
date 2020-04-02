@@ -1,15 +1,15 @@
-Minimal info is a minimal webpage build using React.
+#Minimal info is a minimal webpage build using React.
 
 About:
 
-What to do:
+##What to do:
 
 3 minimal section
 
-- National currency information by using API National Bank of Poland,
-- Simple list to "TO DO"
-- Analog clock with weather info
+#- National currency information by using API National Bank of Poland,
+#- Simple list to "TO DO"
+#- Analog clock with weather info
 
-API's
+##API's
 http://api.nbp.pl/
 https://openweathermap.org/api
