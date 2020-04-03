@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 const ToDo = () => {
+  const visible = document.querySelector("#alert");
   //inicjalizacja tablicy dla mapy
   const fromLocalStorage = JSON.parse(localStorage.getItem("toDoList"));
   const [toDoLists, setToDoList] = useState(fromLocalStorage);
@@ -8,11 +9,18 @@ const ToDo = () => {
   const [task, setTask] = useState();
   const hClickAdd = () => {
     if (task.length < 1) {
-      alert("Nic nie wpisałeś");
+      //alert("Nic nie wpisałeś");
+      visible.classList.remove("nonVisible");
+      visible.classList.add("visible");
       return;
     } else if (task === " ") {
-      alert("Wpisz coś więcej :)");
+      //alert("Wpisz coś więcej :)");
+      visible.classList.remove("nonVisible");
+      visible.classList.add("visible");
       return;
+    } else {
+      visible.classList.remove("visible");
+      visible.classList.add("nonVisible");
     }
     //pobranie danych z value i przekazanie do state z state task
     setToDoList(prevState => {
@@ -42,6 +50,10 @@ const ToDo = () => {
 
   return (
     <div className={"ToDo_content"}>
+      <div id={"alert"} className={"nonVisible"}>
+        {" "}
+        ✍️ MUSISZ COŚ WPISAĆ !{" "}
+      </div>
       <div className={"ToDo_lists"}>
         <ul className={"List_elements"}>
           {toDoLists.map((toDo, index) => (

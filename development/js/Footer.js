@@ -14,7 +14,11 @@ const Foother = () => {
     <footer className={"container"}>
       <div className={"footer_content"}>
         <div className={"social"}>
-          <a href="https://github.com/ememer" className={"fab fa-github"}></a>
+          <a
+            href="https://github.com/ememer/minimal-info"
+            target="_blank"
+            className={"fab fa-github"}
+          ></a>
           <p className={"footer_data"}>{year}</p>
         </div>
       </div>

@@ -1,0 +1,20 @@
+.visible {
+  text-align: center;
+  display: block;
+  border-bottom: 1px solid $main-color;
+  border-left: 1px solid $main-color;
+  border-right: 1px solid $main-color;
+  border-radius: 10px;
+  color: white;
+  font-family: "Sen";
+  font-size: 800;
+  width: 90%;
+  height: 25px;
+  padding: 5px;
+  background: rgba(255, 16, 96, 0.2);
+  transition: ease-in 2s;
+}
+
+.nonVisible {
+  display: none;
+}
