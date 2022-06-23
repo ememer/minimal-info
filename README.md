@@ -2,8 +2,13 @@
 # Minimal info 
 
 Minimal info it's my first ever react app.
-Containing - ToDo list, - Exchange rate, - Clock, - Custom css UI
-App working with weather, national banks and geolocalisation API
+Containing 
+  ### - ToDo list, 
+  ### - Exchange rate,
+  ### - Clock,
+  ### - Custom SCSS UI
+  
+## App working with weather, national banks and geolocalisation API
 
 
 ## Run Locally
